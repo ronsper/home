@@ -1,0 +1,132 @@
+<template name="coreNav">
+	<section class="w-f scrollable">
+		<div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="5px" data-color="#333333">
+
+			<nav class="nav-primary hidden-xs">
+				<ul class="nav">
+					<li  class="active">
+						<a href="/projects"   class="active">
+							<i class="fa fa-home icon">
+								<b class="bg-danger"></b>
+							</i>
+							<span class="pull-right">
+								<i class="fa fa-angle-down text"></i>
+								<i class="fa fa-angle-up text-active"></i>
+							</span>
+							<span>Projects</span>
+						</a>
+						<ul class="nav lt">
+							<li  class="active">
+								<a href="/projects"  class="active">                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>Project List</span>
+								</a>
+							</li>
+							<li >
+								<a href="/projects/item" >                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>New Project</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li >
+						<a href="/reminders"  >
+							<i class="fa fa-tasks icon">
+								<b class="bg-warning"></b>
+							</i>
+							<span class="pull-right">
+								<i class="fa fa-angle-down text"></i>
+								<i class="fa fa-angle-up text-active"></i>
+							</span>
+							<span>Reminders</span>
+						</a>
+					</li>
+					<li >
+						<a href="/transactions"  >
+							<i class="fa fa-table icon">
+								<b class="bg-success"></b>
+							</i>
+							<span class="pull-right">
+								<i class="fa fa-angle-down text"></i>
+								<i class="fa fa-angle-up text-active"></i>
+							</span>
+							<span>Transactions</span>
+						</a>
+						<ul class="nav lt">
+							<li >
+								<a href="/transactions" >                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>Transaction List</span>
+								</a>
+							</li>
+							<li >
+								<a href="/transactions/categories" >                            
+									<b class="badge bg-info pull-right">369</b>                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>Categories</span>
+								</a>
+							</li>
+							<li >
+								<a href="/transactions/item" >                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>Enter Transaction</span>
+								</a>
+							</li>
+							<li >
+								<a href="/transactions/config" >                            
+									<b class="badge  pull-right">8</b>                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>Configuration</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li >
+						<a href="solar"  >
+							<i class="fa fa-sun-o icon">
+								<b class="bg-primary"></b>
+							</i>
+							<span class="pull-right">
+								<i class="fa fa-angle-down text"></i>
+								<i class="fa fa-angle-up text-active"></i>
+							</span>
+							<span>Solar</span>
+						</a>
+						<ul class="nav lt">
+							<li >
+								<a href="solar" >                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>Solar Dashboard</span>
+								</a>
+							</li>
+							<li >
+								<a href="solar/entry" >                                                        
+									<i class="fa fa-angle-right"></i>
+									<span>Data Entry</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li >
+						<a href="store"  >
+							<b class="badge bg-danger pull-right">3</b>
+							<i class="fa fa-tag icon">
+								<b class="bg-primary dker"></b>
+							</i>
+							<span>Store</span>
+						</a>
+					</li>
+					<li >
+						<a href="calendar"  >
+							<i class="fa fa-calendar icon">
+								<b class="bg-info"></b>
+							</i>
+							<span>Calendar</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+</template>

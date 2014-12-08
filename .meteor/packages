@@ -6,12 +6,11 @@
 meteor-platform
 autopublish
 insecure
-momentjs:moment
-less
-jquery
-underscore
 accounts-ui
-bootstrap
-iron:router
+jquery
+andrasph:bootstrap-notebook-theme
 aldeed:autoform
+momentjs:moment
+iron:router
+less
 

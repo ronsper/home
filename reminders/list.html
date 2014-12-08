@@ -1,0 +1,54 @@
+<template name="remindersList">
+	<div class="row reminders">
+		<div class="col-md-12">
+			<ul class="list-group gutter list-group-lg list-group-sp sortable">
+				<li class="list-group-item box-shadow blank">
+					<table class="reminder-item">
+						<tr>
+				    		<td class="clock">
+				    			<a href="#">
+									<i class="fa fa-clock-o"></i> <span class="date">--- --</span>
+								</a> 
+				    		</td>
+				    		<td class="message">
+				    			<input class="new-reminder" placeholder="New Reminder...">
+				    		</td>
+						</tr>
+					</table>
+				</li>
+			</ul>      
+
+			<h4 class="m-t-none">This Week</h4> 
+			<ul class="list-group gutter list-group-lg list-group-sp sortable">
+				{{#each reminders}}
+					{{> remindersItem}}
+				{{/each}} 
+			</ul>                  
+		</div>
+	</div>
+</template>
+
+<template name="remindersItem">
+	<li class="list-group-item box-shadow">
+		<table class="reminder-item">
+			<tr>
+	    		<td class="clock">
+	    			<a href="#">
+						<i class="fa fa-clock-o"></i> <span class="date">Dec 4</span>
+					</a>
+	    		</td>
+	    		<td class="message">
+	    			<span class="reminder-text">{{text}}</span>
+	    		</td>
+	    		<td class="right">
+	    			<a href="#" class="is-done">
+						<i class="fa fa-check"></i>
+					</a>
+					<a href="#" class="options">
+						<i class="fa fa-ellipsis-v"></i>
+					</a>
+	    		</td>
+			</tr>
+		</table>
+	</li>
+</template>
